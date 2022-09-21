@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class Ex002 {
+public class Ex002_ParOuImpar {
 
 	public static void main(String[] args) {
 		// PAR OU IMPAR

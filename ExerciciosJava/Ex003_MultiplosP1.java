@@ -1,6 +1,6 @@
 
 import java.util.Scanner;
-public class Ex003 {
+public class Ex003_MultiplosP1 {
 
 	public static void main(String[] args) {
 		/*
