@@ -37,7 +37,26 @@ public abstract class Conta { // Classe que não pode ser instanciada.
         return saldo;
     }
 
-    public void setSaldo(double saldo) {
+    protected void setSaldo(double saldo) {
         this.saldo = saldo;
     }
+    //Por causa da regra de negocio que estabelece que por medidas de segurança não
+    // se deve alterar o saldo diretamente, sem ser por saque ou depósito,
+    // alteramos o modificador de public para protected.
+
+
+
+    public abstract void saque(double valor);
+    //Como o método é abstrato não há corpo dele, por isso o " ; ".
+    //Método abstrato é declarado sem corpo ( "{}" ),
+    //Sendo obrigatório implementar o corpo do método nas subclasses.
+
+    public void deposito(double valor){
+        if(valor <= 0){
+            System.err.println("Impossível depositar valor negativo");
+        }else{
+            saldo += valor;
+        }
+    }
+
 }

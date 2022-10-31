@@ -5,10 +5,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 
-import java.math.*;
 
-
-public class Homework06 {
+public class Homework06B {
     public static void main(String[] args) {
         /*
             Dever de casa:
@@ -23,11 +21,6 @@ public class Homework06 {
         Calendar dataPagamento = Calendar.getInstance();
         Calendar dataVencimento = Calendar.getInstance();
 
-        dataVencimento.set(2022,((10)-1),12);
-        //Formatando a data de vencimento
-        DateFormat FormatarVencimento = DateFormat.getDateInstance();
-
-
         System.out.println("***************************************************");
         System.out.println("              PAGAMENTO DE MENSALIDADE             ");
         System.out.println("***************************************************");
@@ -41,6 +34,15 @@ public class Homework06 {
         int dia = leia.nextInt();
         dataPagamento.set(Calendar.DAY_OF_MONTH, dia);
 
+        System.out.print("Informe o dia do Vencimento: ");
+        int diaVenc = leia.nextInt();
+
+        System.out.print("Informe o mês do Vencimento: ");
+        int mesVenc = leia.nextInt();
+
+        dataVencimento.set(2022,((mesVenc)-1), diaVenc);
+        //Formatando a data de vencimento
+        DateFormat FormatarVencimento = DateFormat.getDateInstance();
 
         //Formatando a data do pagamento
         DateFormat FormatarPagamento = DateFormat.getDateInstance();
@@ -70,8 +72,8 @@ public class Homework06 {
             System.out.println();
 
             System.out.println("Valor do Pagamento: " + "RS" + valor);
-            System.out.println("Multa de atraso: " + "R$ " + (multa*10));
-            System.out.println("Valor do pagamento com multa: " + (valor + (multa*10)));
+            System.out.println("Multa de atraso: " + "R$ " + (multa*10)*(-1));
+            System.out.println("Valor do pagamento com multa: " + (valor + (multa*10)*(-1)));
             System.out.println("===================================================");
 
         }
