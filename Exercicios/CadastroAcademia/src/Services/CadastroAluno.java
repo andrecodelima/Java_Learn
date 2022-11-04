@@ -22,13 +22,14 @@ public class CadastroAluno {
         double altura = read.nextDouble();
 
         System.out.print("Turma: ");
+        System.out.println("Musculação [1] * Crossfit [2] * Luta [3]");
+        System.out.print("Digite Aqui: ");
         String turma = read.next();
 
         System.out.println("\nCadastro realizado com sucesso!");
 
         array[qtd] = new Aluno(nome, idade, peso, altura, turma);
     }
-
 
 
 }

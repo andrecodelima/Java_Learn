@@ -56,7 +56,7 @@ public class Main {
 
             switch (opcao){
                 case 1:
-                    Aluno.cadastroAluno(regAluno, qtdAluno); //Estudar "o static"
+                    Aluno.cadastroAluno(regAluno, qtdAluno++); //Estudar "o static"
                     break;
 
                 case 2:
@@ -107,16 +107,16 @@ public class Main {
         }else{
             for(int c = 0; c<regAluno.length; c++){
                 if (regAluno[c] == null){break;}
-
-                System.out.println("\nConsultaAlunos");
-                System.out.println("------------------------------------------");
-                System.out.println("Nome: "      +regAluno[c].getNome());
-                System.out.println("Gênero: "    +regAluno[c].getGenero());
-                System.out.println("Telefone: "  +regAluno[c].getTelefone());
-                System.out.println("Idade: "     +regAluno[c].getIdade());
-                System.out.println("Turma: "     +regAluno[c].getTurma());
-                System.out.println("------------------------------------------");
-
+                else {
+                    System.out.println("\nConsultaAlunos");
+                    System.out.println("------------------------------------------");
+                    System.out.println("Nome: " + regAluno[c].getNome());
+                    System.out.println("Gênero: " + regAluno[c].getGenero());
+                    System.out.println("Telefone: " + regAluno[c].getTelefone());
+                    System.out.println("Idade: " + regAluno[c].getIdade());
+                    System.out.println("Turma: " + regAluno[c].getTurma());
+                    System.out.println("------------------------------------------");
+                }
             }
         }
     }

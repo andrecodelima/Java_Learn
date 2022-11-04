@@ -21,7 +21,9 @@ public class Aluno extends Pessoa{
     }
 
     // cadastrar aluno
+
     public static void cadastroAluno(Aluno [] arrayAluno, int qtd){
+
         System.out.println("Cadastro de Alunos");
         Scanner read = new Scanner(System.in);
 
@@ -41,7 +43,7 @@ public class Aluno extends Pessoa{
         String turma = read.next();
 
         arrayAluno[qtd] = new Aluno(nome, genero, tel, idade, turma);
-        qtd++;
+
 
     }
 
