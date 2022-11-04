@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+<<<<<<< HEAD:AulasRevisão/Aula_Abstracao/.idea/vcs.xml
     <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
+=======
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+>>>>>>> 8acc2e84932954b5229a0f859b130b1881aa316c:CadastroAcademia/.idea/vcs.xml
   </component>
 </project>
